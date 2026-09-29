@@ -8,12 +8,12 @@
 
         <style>
             header {
-                background-color: #8FCAFA;
                 color: white;
                 font-family: 'Times New Roman', Times, serif;
+                font-size: 40px;
             }
             body {
-                background-color: aliceblue;
+                background-color: #b2dbfd;
                 color: rgb(0, 0, 0);
                 font-family: 'Times New Roman', Times, serif;
                 text-align: center;
@@ -39,10 +39,17 @@
 
     <body>
         <header>
-            <br>
             <h1>Birds of North America</h1>
-            <h3> Created by the great minds of Draik Beauchamp, Lain Raby, Sam Bailey and Leila Chahboune!</h3>
             <br>
+            <nav>
+            <a href="#">Home</a>
+            <a href="#">NW</a>
+            <a href="#">SW</a>
+            <a href="#">C</a>
+            <a href="#">NE</a>
+            <a href="#">SE</a>
+            </nav>
+
             <button>Home</button>
             <button>Northwest Region</button>
             <button>Southwest Region</button>
@@ -53,16 +60,33 @@
             <br>    
 
         </header> 
+        
 
         <div>
 
         <p>Have you ever looked at a bird and wondered what it was? We may be able to help. There are over 800 species of birds in the United States alone! In each region, we highlight 4 of the most common birds you may see around or in your yard.</p>
         </div>
 
-        <footer>
+       <!---google map <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22199318.238691367!2d-97.06089460796186!3d37.98222464539711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1790107367554!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"   -->
 
-            
-                <p> Here is the footer.</p>
+
+<h2>Image Map</h2>
+<p>Click on a region to take you to a page with the birds of that area!</p>
+
+<img src="interactive map image.png" alt="Regions Map" usemap="#workmap" width="550" height="400">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+
+
+
+        <footer>
+        <h3> Created by the great minds of Draik Beauchamp, Lain Raby, Sam Bailey and Leila Chahboune!</h3>
+        <p> Here is the footer.</p>
         </footer>
     </body>
 </html>
