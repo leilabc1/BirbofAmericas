@@ -33,17 +33,60 @@
                 background-attachment: fixed;
                 background-color: #8FCAFA;
             }
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+                position: relative;
+                }
+
+            .topnav #myLinks {
+                display: none;
+                }
+
+            .topnav a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+                }
+
+            .topnav a.icon {
+                background: rgb(210, 245, 182);
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                 }
+
+            .active {
+                background-color: #3679a5;
+                color: white;
+                }
         </style>
 
     </head>
 
     <body>
         <header>
+
+            <div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
             <h1>Birds of North America</h1>
             <br>
             <nav>
-            <a href="#">Home</a>
-            <a href="#">NW</a>
+            <a href="index.html">Home</a>
+            <a href="northwest.html">Northwest Region</a>
             <a href="#">SW</a>
             <a href="#">C</a>
             <a href="#">NE</a>
@@ -61,6 +104,7 @@
 
         </header> 
         
+        <h3> Created by the great minds of Draik Beauchamp, Lain Raby, Sam Bailey and Leila Chahboune!</h3>
 
         <div>
 
@@ -85,8 +129,9 @@
 
 
         <footer>
-        <h3> Created by the great minds of Draik Beauchamp, Lain Raby, Sam Bailey and Leila Chahboune!</h3>
-        <p> Here is the footer.</p>
+
+            
+                <p> Here is the footer.</p>
         </footer>
     </body>
 </html>
