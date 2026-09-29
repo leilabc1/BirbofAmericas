@@ -1,0 +1,22 @@
+body {
+      font-family: times new roman;
+      background-color: #b2dbfd;
+      color: rgb(0, 0, 0);
+      text-align: center;
+}
+
+header {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+}
+
+
+p { }
+
+footer {
+        background-attachment: fixed;
+        background-color: #8FCAFA;
+            }
+
+  
