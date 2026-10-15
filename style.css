@@ -64,3 +64,15 @@ object-fit: contain;
 
 
 }
+
+
+.paint-splatter {
+background-image: url("images/paintsplatter.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+width: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
