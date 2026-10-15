@@ -1,0 +1,66 @@
+body {
+
+
+/* overall style and background img */
+margin: 0; 
+min-height: 100vh; 
+background-image: url("backgroundregions.png");
+background-repeat: no-repeat; 
+background-size: cover; 
+background-position: center; 
+background-attachment: fixed; 
+
+font-family: "Bauhaus 93"; 
+color:  #3f3f3f;
+
+}
+
+/* header styles */
+h1 {
+
+        padding: 10px; 
+        text-align: center;
+        font-size: 50px;
+        margin-top: 20px;
+
+}
+
+.regionsmap {
+
+position: absolute; 
+top: 200px; 
+left: 20px; 
+width: 400px; 
+height: auto; 
+
+}
+  
+  /* bird pic and info grouped */
+.bird-card { 
+
+        display: flex; 
+        justify-content: flex-end;
+        align-items: center; 
+        gap: 25px; 
+        margin: 70px 60px 220px;
+        margin-bottom: 150px;
+
+}
+
+/* bird name */
+.bird-name {
+
+        text-align: right; 
+        font-size: 22px; 
+        line-height: 1.5; 
+
+}
+
+.bird-img {
+
+width: auto; 
+height: 300px; 
+object-fit: contain; 
+
+
+}
