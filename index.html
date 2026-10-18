@@ -4,58 +4,117 @@
 <head> 
     <meta charset="UTF-8">
     <title> Birds of America </title>
-
+    <link href="style.css" rel="stylesheet">
     <style>
 
-    body { 
-
+body { 
+    background-color: #fdfcf8;
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #3f3f3f;
+    }
        
 h1 { 
     padding: 10px; 
     text-align: center; 
     color: #3f3f3f;
     font-size: 50px;
-
 }
 
 p {
-padding: 200px;
-text-align: center;
-
+    padding: 200px;
+    text-align: center;
 }
-        background-color: #fdfcf8;
+     
+.menu {
+    display: none;
+    background: #555454;
+    padding: 10px;
+}
+.menu a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
 
-font-family: 'Bauhaus 93', sans-serif;
-font-size: 16x;
-line-height: 1.5; 
-color: #3f3f3f;
+.menu a:hover {
+    background: #6b0909;
+}
 
-    }
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
 
-    </style>
+</style>
 
 </head>
 
 <body> 
 
     <!-- attempting to make a navgation meny dropdown-->
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="menu" id="ham_menu">
+        <a href="NorthwestRegion.html">Northwest Region</a>
+        <a href="NortheastRegion.html">Northeast Region</a>
+        <a href="SoutheastRegion.html">Southeast Region</a>
+        <a href="SouthwestRegion.html">Southwest Region</a>
+        <a href="CentralRegion.html">Central Region</a>
+        </div>
+
+<script>
+    function toggleMenu(){
+        const menu = document.getElementById("ham_menu");
+        if(menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else{    
+            menu.style.display = "block";
+        }
+    }
+
+
+
+</script>
+
+
+
 <nav>
-    <!-- always visible items in the nav bar -->
+    <!-- always visible items in the nav bar 
     <ul>
         <li>Regions</li>
-    </ul>
+    </ul>-->
+
+
     <!--  collapsable menu -->
-    <ul>
+    <!--<ul>
         <li><a href='NortheastRegion.html'>Northeast</a></li>
         <li><a href='SoutheastRegion.html'>Southeast</a></li>
         <li><a href='CentralRegion.html'>Central</a></li>
-    </ul>
+    </ul> -->
 </nav>
     
     <h1> Birds of America </h1>
+    <h3> Welcome to Birds of America, select a region from a button below the map or 
+        using the drop down menu above to learn about 5 different species of birds from selected region.
+    </h3>
+    <div style = "text-align: center;">
+        <img src= "images/Regions.png" class= "center" width="600">
+    </div>
+    
+    <!--<p> this is where the interactive map will go </p> -->
 
-    <p> this is where the interactive map will go </p> 
-
+ <div align="center">
+  <a href="NorthwestRegion.html"><button>Northwest Region</button></a>
+  <a href="NortheastRegion.html"><button>Northeast Region</button></a>
+  <a href="SoutheastRegion.html"><button>Southeast Region</button></a>
+  <a href="SouthwestRegion.html"><button>Southwest Region</button></a>
+  <a href="CentralRegion.html"><button>Central Region</button></a>
+</div>   
 </body> 
     
 </html>
