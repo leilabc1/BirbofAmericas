@@ -9,9 +9,49 @@
 
 </head>
 
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const regionMenu = document.getElementById("regionMenu");
+
+menuToggle.addEventListener("click", function () {
+   const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+
+   menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+   regionMenu.hidden = isExpanded;
+});
+
+document.addEventListener("click", function (event) {
+   if (!event.target.closest(".hamburger-menu")) {
+      regionMenu.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+   }
+});
+</script>
+</body>
 
 <body> 
-  
+
+  <nav class="hamburger-menu">
+   <button class="menu-toggle"
+           id="menuToggle"
+           aria-label="Toggle navigation menu"
+           aria-expanded="false"
+           aria-controls="regionMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+   </button>
+
+   <div class="menu-dropdown" id="regionMenu" hidden>
+      <a href="index.html">Home</a>
+      <a href="NorthwestRegion.html">Northwest Region</a>
+      <a href="NortheastRegion.html">Northeast Region</a>
+      <a href="SoutheastRegion.html">Southeast Region</a>
+      <a href="SouthwestRegion.html">Southwest Region</a>
+      <a href="CentralRegion.html">Central Region</a>
+   </div>
+</nav>
+
     <h1> Northwest Region </h1>
 
 
