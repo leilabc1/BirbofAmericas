@@ -133,3 +133,41 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+.bird-card-V2 {
+    background-color: rgb(209, 182, 182);
+    border : 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+
+}
+
+.bird-name-V2 {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 18px;
+    list-style: none;
+}
+
+.bird-name-V2::-webkit-details-marker{
+    display: none;
+}
+
+.bird-name-V2::after {
+    content: "+";
+    float: left;
+    font-size: 22px;
+}
+
+details[open] .bird-name-V2::after {
+    content: "-";
+}
+
+.bird-card-V2 ul {
+    line-height: 1.6;
+}
+.bird-card-V2 audio {
+    width: 100%;
+    margin-top: 10px;
+}
