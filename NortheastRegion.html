@@ -10,6 +10,55 @@
     
 </head>
 
+<style>
+    .menu {
+    display: none;
+    background: #555454;
+    padding: 10px;
+}
+.menu a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #DE91ED;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+</style>
+<body> 
+
+    <!-- attempting to make a navgation meny dropdown-->
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div class="menu" id="ham_menu">
+        <a href="index.html"> Home </a>
+        <a href="NorthwestRegion.html">Northwest Region</a>
+        <a href="SoutheastRegion.html">Southeast Region</a>
+        <a href="SouthwestRegion.html">Southwest Region</a>
+        <a href="CentralRegion.html">Central Region</a>
+        </div>
+
+<script>
+    function toggleMenu(){
+        const menu = document.getElementById("ham_menu");
+        if(menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else{    
+            menu.style.display = "block";
+        }
+    }
+
+</script>
+
 <body> 
   
     <h1> Northeast Region</h1>
