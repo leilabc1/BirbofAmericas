@@ -174,11 +174,12 @@ details[open] .bird-name-V2::after {
 
 .interactivemap {
 
-display: flex;
-position: fixed; 
-left: 30%; 
-top: 40%;
+display: flex; 
+justify-content: center;
+margin: 15px auto 40px; 
 
 
-
+}
+.interactivemap img {
+  display: block;
 }
