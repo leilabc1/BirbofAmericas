@@ -61,7 +61,7 @@ body {
 /* overall style and background img */
 margin: 0; 
 min-height: 100vh; 
-background-image: url("backgroundregions.png");
+background-image: url("images/backgroundd.png");
 background-repeat: no-repeat; 
 background-size: cover; 
 background-position: center; 
@@ -135,7 +135,7 @@ align-items: center;
 }
 
 .bird-card-V2 {
-    background-color: rgb(209, 182, 182);
+    background-color: rgb(197, 188, 183);
     border : 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
