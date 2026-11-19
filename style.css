@@ -90,7 +90,7 @@ background-position: center;
 background-attachment: fixed; 
 
 }
-
+}
 
 /* header styles */
 h1 {
@@ -155,7 +155,7 @@ align-items: center;
 }
 
 .bird-card-V2 {
-    background-color: rgb(197, 188, 183);
+    background-color: rgb(213, 143, 105);
     border : 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
