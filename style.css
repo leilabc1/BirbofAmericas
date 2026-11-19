@@ -89,6 +89,9 @@ background-size: cover;
 background-position: center; 
 background-attachment: fixed; 
 
+        <!---Anton-->
+font-family: "Bauhaus 93"; 
+color:  #3f3f3f;
 
 }
 
@@ -135,9 +138,9 @@ height: auto;
 
 .bird-img {
 
-    width: 100%;
-    height: 400px;
-    object-fit: contain;
+width: auto; 
+height: 300px; 
+object-fit: contain; 
 
 
 }
@@ -148,48 +151,36 @@ background-image: url("images/paintsplatter.png");
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
-
-    width: 40%;
-    height: 450px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .bird-card-V2 {
-    background-color: rgba(197, 188, 183, 0.8);
-    border-radius: 45px;
-    padding: 20px;
-    width: 50%;
+    background-color: rgb(197, 188, 183);
+    border : 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
 
 }
 
 .bird-name-V2 {
     cursor: pointer;
-    font-size: 22px;
-    padding: 0 15px;
-    text-align: center;
+    font-size: 18px;
+    padding: 18px;
     list-style: none;
-    position: relative;
 }
 
-.bird-name-V2 p {
-    margin: 0;
-    padding: 0;
-}
-
-.bird-name-V2::-webkit-details-marker {
+.bird-name-V2::-webkit-details-marker{
     display: none;
 }
 
 .bird-name-V2::after {
     content: "+";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
+    float: left;
+    font-size: 22px;
 }
 
 details[open] .bird-name-V2::after {
@@ -214,15 +205,4 @@ margin: 15px auto 40px;
 }
 .interactivemap img {
   display: block;
-}
-
-.bird-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-
-    width: 90%;
-    max-width: 900px;
-    margin: 120px auto;
 }
