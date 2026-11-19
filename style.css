@@ -110,6 +110,16 @@ width: 400px;
 height: auto; 
 
 }
+
+
+.header { 
+
+display: flex; 
+top: 50px; 
+margin: 10%;
+
+}
+
   
   /* bird pic and info grouped */
 .bird-card { 
